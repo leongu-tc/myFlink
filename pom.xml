@@ -48,6 +48,12 @@
 			<version>${flink.version}</version>
 			<scope>provided</scope>
 		</dependency>
+		<!-- add for IDE local UI-->
+		<dependency>
+			<groupId>org.apache.flink</groupId>
+			<artifactId>flink-runtime-web_2.11</artifactId>
+			<version>${flink.version}</version>
+		</dependency>
 		<!-- Add connector dependencies here. They must be in the default scope (compile). -->
 		<dependency>
 			<groupId>org.apache.flink</groupId>
