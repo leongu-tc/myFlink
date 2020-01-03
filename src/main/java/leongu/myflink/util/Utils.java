@@ -7,6 +7,10 @@ import java.io.File;
 
 public class Utils {
 
+	/**
+	 * local run with web ui localhost:18081
+	 * @return
+	 */
 	public static StreamExecutionEnvironment localEnv() {
 		Configuration flink_conf = new Configuration();
 		flink_conf.setLong("rest.port", 18081);
@@ -15,6 +19,10 @@ public class Utils {
 		return env;
 	}
 
+	/**
+	 * mac standalone cluster localhost:8081 , with myflink.jar
+	 * @return
+	 */
 	public static StreamExecutionEnvironment remoteEnv() {
 		String jarPath = Constants.target + "myflink-1.0.0.jar";
 		System.out.println(jarPath);
