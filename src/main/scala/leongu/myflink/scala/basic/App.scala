@@ -1,4 +1,4 @@
-package leongu.myflink.basic
+package leongu.myflink.scala.basic
 
 object App {
   def main(args: Array[String]): Unit = {
